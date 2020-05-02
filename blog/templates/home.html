@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <ul>
+        {% for i in posts %}
+            <li>
+                {{ i.title }}  
+                <br>
+                 {{ i.content }}
+                 <br>
+                 {{i.date_posted|time}}
+            </li>
+        {% endfor %}
+
+
+    </ul>
+
+{% endblock content %}
